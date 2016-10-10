@@ -82,7 +82,7 @@ public class Festival {
 
     private void tts(Word word, Operations op) {
         // TODO: FESTIVAL
-       String sentence = sentenceBuilder(word, op);
+        String sentence = sentenceBuilder(word, op);
         BufferedWriter writer = null;
         if (SCM_FILE.exists()) {
             SCM_FILE.delete(); // reset

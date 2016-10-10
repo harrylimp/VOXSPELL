@@ -139,9 +139,8 @@ public class StatsController implements Initializable {
         wrongColumn.setCellValueFactory(new PropertyValueFactory<>("failed"));
 
         ObservableList<Word> words = FXCollections.observableArrayList();
-        for (Word word : selectedWords) {
-            words.add(word);
-        }
+        // for loop changed using the addAll
+        words.addAll(selectedWords);
         tableView.setItems(words);
         tableView.setPlaceholder(new Label("Level not completed!"));
 

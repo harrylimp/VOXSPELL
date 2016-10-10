@@ -60,7 +60,8 @@ public class WordList {
     private void readFile() {
         BufferedReader reader = null;
         try {
-            File filename = new File("./lib/NZCER-spelling-lists.txt");
+            String finalChosenFinal = "./lib/" + LevelData.getFilename();
+            File filename = new File(finalChosenFinal);
             reader = new BufferedReader(new FileReader(filename));
             String line;
             String findLevel = "%Level " + Integer.toString(level);

@@ -23,7 +23,7 @@
                 </Text>
             </children>
         </HBox>
-      <VBox alignment="CENTER" prefHeight="285.0" prefWidth="600.0">
+      <VBox alignment="CENTER" prefHeight="271.0" prefWidth="600.0">
          <children>
             <HBox alignment="CENTER">
                <children>
@@ -126,6 +126,11 @@
             </HBox>
             <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
                <children>
+                  <Button fx:id="chooseFileButton" mnemonicParsing="false" text="Choose File">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Button>
                   <MenuButton fx:id="voiceMenuButton" mnemonicParsing="false" text="MenuButton">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Action 1" />

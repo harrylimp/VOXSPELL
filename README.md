@@ -1,13 +1,19 @@
 # voxspell
 #### A spelling application targeted at native English learners aged 7-10
-developed for Java 8 with <3 by Nathan and Harry
+developed for Java 8 with <3 by Harry (and formerly Nathan)
 this version is for evaluation purposes and has a Evaluation-only unlock all level mode (see usage guide)
 
 ##quick start
 Download/clone as .zip, extract and run the run.sh script
-(requires Oracle Java 1.7 and festival text-to-speech)
+(requires Oracle Java 1.8 and festival text-to-speech)
 
-##brief usage guide
+###wordlists
+There will be a default wordlist implemented for children to test. In order to choose between different
+wordlists the user must save a ".txt" file inside the "lib" folder of the VOXSPELL manually. This should be 
+alongside the default "NZCER-spelling-lists.txt" list. The voxpsell assumes that the text file is in the 
+same format as given in the default spelling list, that is, that each new level starts with a %Level and
+that there are no more than 11 levels. There should also be at least 10 words in each level. If no words are
+given for the particular level, the button has no action.
 
 ###levels
 Only level 1 is unlocked on first launch. The next level is automatically and permanently unlocked when

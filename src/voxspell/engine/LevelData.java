@@ -16,6 +16,7 @@ public class LevelData {
     private static DataIO data = new DataIO();
     private static ArrayList<Word> currentWordList;
     private static String voice = data.getVoice();
+    private static String filename = "NZCER-spelling-lists.txt";
     private static boolean isReview = false;
 
     /**
@@ -84,6 +85,14 @@ public class LevelData {
             }
         }
         return wordList;
+    }
+
+    public static void setFilename(String file) {
+        filename = file;
+    }
+
+    public static String getFilename() {
+        return filename;
     }
 
     public static boolean isReview() {
